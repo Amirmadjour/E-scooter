@@ -361,7 +361,7 @@ section p {
   z-index: 2;
 }
 
-.multiple-accessories, .golf-bag-rock, .shopping-rack, .gallery, .colors {
+.multiple-accessories, .golf-bag-rock, .shopping-rack, .gallery, .colors, .testimonials {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -485,7 +485,10 @@ div.gallery-right-container > div{
 .colors-container {
   display: flex;
   flex-direction: row;
-  margin-top: -10%;
+  padding: 0;
+  margin: -10% 0 0 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 
   z-index: 2;
 }
@@ -501,4 +504,95 @@ div.gallery-right-container > div{
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.image-color-container {
+  display: flex;
+  flex-direction: column;
+}
+
+div.image-color-container > img {
+  border-radius: 0.625rem;
+  flex-shrink: 0;
+}
+
+div.image-color-container > div {
+  height: 16.5rem;
+  width: 16.5rem;
+  border-radius: 0.625rem;
+
+  border-radius: 0.625rem;
+  box-shadow: 0px 15px 70px 0px rgba(162, 169, 192, 0.20);
+}
+
+.color-shadow-inside {
+  margin: -86.25% auto 0 auto;
+}
+
+.color-shadow-blue {
+  margin: -90.75% 18.25% 0 auto;  
+}
+
+.color-shadow-black {
+  margin: -91% 12.75% 0 auto;
+}
+
+.testimonials {
+  margin-top: 10%;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2.5%;
+  height: 25rem;
+}
+
+div.testimonials-container > div {
+  display: flex;
+  flex-direction: column;
+
+  width: 22.5rem;
+  height: 22.5rem;
+
+  border: 1px solid #D8D8D8;
+}
+
+div.card-container > img {
+  width: 7.5rem;
+  margin: 15% auto 0 auto;
+}
+
+div.card-container > p {
+  text-align: justify ;
+  margin-top: 10%;
+  padding: 0 1rem;
+}
+
+.person-info-container {
+  position: relative;
+  margin: auto auto 2rem auto;
+  display: flex;
+  width: 15rem;
+  justify-content: space-evenly;
+}
+
+.person-info-container > img {
+  height: 3rem;
+  margin-top: auto;
+}
+
+.person-info-written-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 10rem;
+}
+
+div.person-info-written-container > p{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+section.testimonials > svg {
+  margin: 0rem auto 10rem auto;
 }

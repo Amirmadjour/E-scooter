@@ -1,5 +1,5 @@
 There is a lot of css selectors:
-  1. Descendant combinator (space): selects direct children of a specified element.
+  1. Descendant combinator (space): selects the element nested in the first element.
   2. Child combinator (>): Selects direct children of specified element.
   3. Adjacent sibling combinator (+): Selects the next sibling element immediately.
   4. General sibling combinator (~): Selects all sibling elements that follow a specified element.
