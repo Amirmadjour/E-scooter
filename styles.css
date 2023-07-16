@@ -361,7 +361,7 @@ section p {
   z-index: 2;
 }
 
-.multiple-accessories, .golf-bag-rock, .shopping-rack, .gallery {
+.multiple-accessories, .golf-bag-rock, .shopping-rack, .gallery, .colors {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -468,4 +468,37 @@ div.gallery-right-container > div{
   line-height: normal;
 
   padding: 1rem 0 0 1rem;
+}
+
+.colors {
+  margin-top: 10%;
+}
+
+.white-e-scooter {
+  margin-top: 10%;
+}
+
+.white-e-scooter {
+  z-index: 1;
+}
+
+.colors-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: -10%;
+
+  z-index: 2;
+}
+
+.e-scooter-color-number {
+  position: absolute;
+  margin: 14% 0 0 14%;
+
+  color: rgba(255, 255, 255, 0.60);
+  text-align: center;
+  font-family: var(--font);
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
