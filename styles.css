@@ -321,7 +321,7 @@ section p {
   margin-top: 6%;
 }
 
-.info-feature, .golf-feature {
+.info-feature, .golf-feature, .shopping-feature {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -329,11 +329,11 @@ section p {
   margin-bottom: 3%;
 }
 
-.info-logo, .golf-logo {
+.info-logo, .golf-logo, .shopping-logo {
   flex-shrink: 0;
 }
 
-.info-feature-description {
+.info-feature-description, .shopping-feature-description {
   display: inline;
   position: relative;
   margin-left: 5%;
@@ -361,7 +361,7 @@ section p {
   z-index: 2;
 }
 
-.multiple-accessories, .golf-bag-rock {
+.multiple-accessories, .golf-bag-rock, .shopping-rack, .gallery {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -370,24 +370,102 @@ section p {
   z-index: 2;
 }
 
-.golf-bag-rock {
+.golf-bag-rock, .shopping-rack {
   flex-direction: row;
   margin-top: 10%;
 }
 
-.golf-container {
+.shopping-rack {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.golf-container, .shopping-container {
   width: 40%;
 }
 
-.golf-feature, .golf-mini-mini-header{
+.shopping-container {
+  padding-right: 5%;
+}
+
+.golf-feature, section h3{
   padding-left: 15%;
 }
 
-.golf-mini-mini-header {
+section h3 {
   color: #42454A;
   font-family: var(--font);
   font-size: 3.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 3.75rem */
+}
+
+.shopping-mini-mini-header {
+  padding-left: 25%; 
+}
+
+.shopping-rack-image {
+  align-self: center;
+  height: 50%;
+}
+  
+.accessories, .gallery-info {
+  position: relative;
+  width: 50;
+  margin: 5% auto 5% auto;
+  padding: 1.8rem 4rem;
+
+  color: #42454A;
+  text-align: center;
+  font-family: var(--font);
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 2.25rem */
+
+  border-radius: 0.625rem;
+  border: 2px solid #42454A;
+}
+
+.gallery {
+  margin: 0;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-around;
+}
+
+div.gallery-container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+div.gallery-right-container > div{
+  margin: 10% 0;
+}
+
+.scooter {
+  margin-top: 40%;
+}
+
+.gallery-info {
+  width: 100%;
+  padding: 1.8rem 0;
+}
+
+.gallery-image-title {
+  position: absolute;
+
+  color: #42454A;
+  font-family: var(--font);
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding: 1rem 0 0 1rem;
 }

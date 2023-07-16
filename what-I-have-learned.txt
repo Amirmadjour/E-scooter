@@ -1,0 +1,39 @@
+There is a lot of css selectors:
+  1. Descendant combinator (space): selects direct children of a specified element.
+  2. Child combinator (>): Selects direct children of specified element.
+  3. Adjacent sibling combinator (+): Selects the next sibling element immediately.
+  4. General sibling combinator (~): Selects all sibling elements that follow a specified element.
+  5. Grouping combinator (,): Selects multiple selectors so that styles can be applied to all of them.
+  6. Universal Selector (*): Selects all elements in the document.
+  7. Attribute Selector ([]): Selects elements based on their attribute values.
+  8. Pseudo-class Selector (:): Selects elements based on certain state of condition.
+  9. Pseudo-element Selector (::): Selects a specific part of an element or generates content.
+  10. ID selector (#): Selects an element based on its unique ID;
+  11. Class selector(.): Selects elements based on their class attribute.
+  12. Element selector: selects elements on their element type.
+
+Getting The width and height of the parent of an element:
+  By percentage, inheritance, auto inheritance: the div element if not styled (width, height) it will naturally take up the full
+  properties(width, height) of the parent or by the calc() function example 'width: calc(50% - 20px)'.
+
+Modifying a piece of text of a text:
+  Use the span element.
+  example:
+    <h1>LET'S RIDE <span>THE FUTURE.</span></h1>
+
+Display CSS property:
+  The properties: 
+    - flex-direction: defaults to row.
+    - justify-content: manipulating items horizontally.
+    - align-items: manipulating items vertically.
+    - flex-wrap: wrapping items to a new line.
+    - align-content: this property only works if flex-wrap is set to wrap and there is elements wrapping.
+    - gap.
+    - flex-grow: if set to 0, the element will take all the space left, if all the element had flex-grow set to 1, 
+    the remaining space will be distributed equally to all children.
+    - flex-shrink: if set to 0, the element won't shrink.
+    - flex-basis: defines the size of an item before the remaining space is distributed.
+    - flex-shorthand: flex is shortcut for flex - grow shrink basis - combined.
+    - align-self: The element itself and leaving other element on the same state.
+    - order: the element are ordered on the same order they are mentioned on the html page, and this property changes this order.
+
