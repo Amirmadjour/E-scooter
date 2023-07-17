@@ -22,6 +22,7 @@ Modifying a piece of text of a text:
     <h1>LET'S RIDE <span>THE FUTURE.</span></h1>
 
 Display CSS property:
+  -flex:
   The properties: 
     - flex-direction: defaults to row.
     - justify-content: manipulating items horizontally.
@@ -37,3 +38,19 @@ Display CSS property:
     - align-self: The element itself and leaving other element on the same state.
     - order: the element are ordered on the same order they are mentioned on the html page, and this property changes this order.
 
+  -Grid:
+    The properties: 
+    - grid-template-rows & columns: to define the number of rows/ columns.
+    - grid-row & grid-column: for positioning.
+    - span-keyword: to not explicitly define the start of a grid item.
+    - grid-area: row-start/ column-start/ row-end/ column-end. (you can use negative numbers)
+    - grid-auto-rows & columns: to set it for the implicite grid add where there is no space left in the explicite grid.
+    - grid-auto-flow: row or column, to specify where the new item will be on.
+    - Fractional units: take all the space and divide it into fractions.
+    - repeat(times / units).
+    - minmax(min / max): to set the minimun and maximum size.
+    - grid-template-areas: to name each area of the grid for positioning.
+    - justify-items & align-items
+    - justify-self & justify-self
+    - justify-content & align-content
+    - auto-fit: for a responsive grid.

@@ -361,7 +361,7 @@ section p {
   z-index: 2;
 }
 
-.multiple-accessories, .golf-bag-rock, .shopping-rack, .gallery, .colors, .testimonials {
+.multiple-accessories, .golf-bag-rock, .shopping-rack, .gallery, .colors, .testimonials, .newsletter {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -412,7 +412,6 @@ section h3 {
   
 .accessories, .gallery-info {
   position: relative;
-  width: 50;
   margin: 5% auto 5% auto;
   padding: 1.8rem 4rem;
 
@@ -595,4 +594,117 @@ div.person-info-written-container > p{
 
 section.testimonials > svg {
   margin: 0rem auto 10rem auto;
+}
+
+.newsletter {
+  margin: 5% 0 0 0;
+}
+
+.email-container {
+  display: flex;
+  width: 45%;
+  margin: 10% auto 10% auto;
+  justify-content: space-evenly;
+}
+
+div.email-container > input {
+  width: 25rem;
+  height: 5rem;
+  padding-left: 2rem;
+  flex-shrink: 0;
+
+  border-radius: 0.625rem;
+  border: 1.5px solid #F5F5F5;
+  background: #FAFAFA;
+
+  text-align: left;
+}
+
+div.email-container > input, div.email-container > button {
+  color: #42454A;
+  font-family: var(--font);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 1.75rem */
+}
+
+div.email-container > button {
+  width: 12.25rem;
+  height: 5rem;
+  flex-shrink: 0;
+
+  border-radius: 0.625rem;
+  background: #42454A;
+  border: none;
+
+  color: #FBFBFB;
+  text-align: center;
+}
+
+.footer {
+  position: relative;
+
+  width: 100%;
+  height: 70%;
+}
+
+.footer-bg {
+  position: absolute;
+  width: 100%;
+  height: 75%;
+
+  bottom: 0;
+
+  background-color:#42454A;
+  z-index: 1;
+}
+.footer-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  z-index: 2;
+}
+
+section.footer-container > img {
+  height: 50%;
+
+  z-index: 2;
+}
+
+.footer-info-container {
+  display: grid;
+  grid-template-rows: 5rem repeat(4, 4rem);
+  grid-template-columns: repeat(3, 14rem);
+  align-items: center;
+
+  padding-top: 10%;
+  margin: 2rem 10rem 0 0;
+}
+
+div.footer-info-container > div {
+  color: #FBFBFB;
+  font-family: var(--font);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+div.legals ~ div {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+div.footer-info-container > svg {
+  grid-area: 5 / 3 / 6 / 4;
+}
+
+section.footer > p {
+  padding-top: 2.5rem;
+
+  color: #FBFBFB;
+
+  z-index: 2;
 }
