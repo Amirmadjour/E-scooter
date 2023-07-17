@@ -1,10 +1,18 @@
 :root {
-  --clr: white;
   --font: 'Ubuntu', sans-serif;
+  --main-font-clr: #42454A;
+}
+
+* {
+  color: #42454A;
+  font-weight: 400;
+  line-height: normal;
+  font-style: normal;
+  font-style: var(--font);
 }
 
 body {
-  background-color: var(--clr);
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -15,13 +23,8 @@ body, .top-nav, .nav-list {
 }
 
 .nav-menu-item, .log-in, .sign-up, section h1, .the-future, .simple-and-sleek, .hero-buy-now, .watch-our-videos{
-  color: #42454A;
   text-align: center;
-  font-family: var(--font);
   font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .vector {
@@ -145,8 +148,6 @@ section h1{
 
   font-family: 'Calistoga', cursive;
   font-size: 9.375rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 14.375rem; /* 153.333% */
   letter-spacing: 0.09375rem;
   text-shadow: #8B938D 1px 1px, #8B938D -1px -1px, #8B938D -1px 1px, #8B938D 1px -1px;
@@ -255,11 +256,8 @@ section h1{
 }
 
 .feature-values, .feature-description {
-  color: #42454A;
   text-align: center;
-  font-family: var(--font);
   font-size: 2.5rem;
-  font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 2.5rem */
 }
@@ -273,9 +271,6 @@ section h1{
 
 .feature-description {
   font-size: 0.8125rem;
-  font-weight: 400;
-  line-height: 130%; /* 1.05625rem */font-size: 0.8125rem;
-  font-weight: 400;
   line-height: 130%; /* 1.05625rem */
 }
 
@@ -292,18 +287,14 @@ section h2, section p {
   margin: 0.75%;
   padding: 0;
 
-  color: #42454A;
   text-align: center;
-  font-family: var(--font);
   font-size: 3.125rem;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 3.75rem */
 }
 
 section p {
   font-size: 1.25rem;
-  font-weight: 400;
   line-height: 140%; /* 1.75rem */
 }
 
@@ -338,11 +329,7 @@ section p {
   position: relative;
   margin-left: 5%;
 
-  color: #42454A;
-  font-family: var(--font);
   font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 140%; /* 1.75rem */
 }
 
@@ -393,10 +380,7 @@ section p {
 }
 
 section h3 {
-  color: #42454A;
-  font-family: var(--font);
   font-size: 3.125rem;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 3.75rem */
 }
@@ -415,11 +399,8 @@ section h3 {
   margin: 5% auto 5% auto;
   padding: 1.8rem 4rem;
 
-  color: #42454A;
   text-align: center;
-  font-family: var(--font);
   font-size: 1.875rem;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 2.25rem */
 
@@ -459,12 +440,8 @@ div.gallery-right-container > div{
 .gallery-image-title {
   position: absolute;
 
-  color: #42454A;
-  font-family: var(--font);
   font-size: 1.875rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 
   padding: 1rem 0 0 1rem;
 }
@@ -498,11 +475,8 @@ div.gallery-right-container > div{
 
   color: rgba(255, 255, 255, 0.60);
   text-align: center;
-  font-family: var(--font);
   font-size: 5rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
 .image-color-container {
@@ -621,11 +595,7 @@ div.email-container > input {
 }
 
 div.email-container > input, div.email-container > button {
-  color: #42454A;
-  font-family: var(--font);
   font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 140%; /* 1.75rem */
 }
 
@@ -685,16 +655,12 @@ section.footer-container > img {
 
 div.footer-info-container > div {
   color: #FBFBFB;
-  font-family: var(--font);
   font-size: 1.375rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
 div.legals ~ div {
   font-size: 1rem;
-  font-weight: 400;
 }
 
 div.footer-info-container > svg {
