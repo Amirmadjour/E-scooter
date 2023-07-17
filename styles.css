@@ -9,6 +9,7 @@
   line-height: normal;
   font-style: normal;
   font-style: var(--font);
+  font-family: var(--font);
 }
 
 body {
