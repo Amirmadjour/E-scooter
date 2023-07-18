@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-scooter</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="function.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Ubuntu:wght@300;400;500;700&display=swap"
@@ -385,12 +386,18 @@
         </div>
       </div>
     </div>
-    <svg width="108" height="42" viewBox="0 0 108 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="66" width="42" height="42" rx="21" fill="#42454A" />
-      <path d="M80 21H94M94 21L90 17M94 21L90 25" stroke="#FAFAFA" stroke-linecap="round" stroke-linejoin="round" />
-      <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#42454A" />
-      <path d="M28 21H14M14 21L18 17M14 21L18 25" stroke="#42454A" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
+    <div class="switchers-container">
+      <svg width="108" height="42" viewBox="0 0 108 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect id="left-button-rect" x="66" y="0.5" width="41" height="41" rx="20.5" stroke="#42454A" />
+        <path id="left-button-path" d="M80 21H94M94 21L90 17M94 21L90 25" stroke="#42454A" stroke-linecap="round" stroke-linejoin="round" />
+        <rect id="right-button-rect" x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#42454A" />
+        <path id="right-button-path" d="M28 21H14M14 21L18 17M14 21L18 25" stroke="#42454A" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <div class="testimonials-switchers">
+        <button class="testimonials-left-switcher" type="button"></button>
+        <button class="testimonials-right-switcher" type="button"></button>
+      </div>
+    </div>
   </section>
 
   <section class="newsletter">

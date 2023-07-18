@@ -22,7 +22,7 @@ body, .top-nav, .nav-list {
   margin: 0;
 }
 
-.nav-menu-item, .log-in, .sign-up, section h1, .the-future, .simple-and-sleek, .hero-buy-now, .watch-our-videos{
+.nav-menu-item, div.nav-buttons > button, section h1, .the-future, .simple-and-sleek, .hero-buy-now, .watch-our-videos{
   text-align: center;
   font-size: 0.875rem;
 }
@@ -32,13 +32,18 @@ body, .top-nav, .nav-list {
 }
 
 .top-nav {
-  margin-top: 1.625rem;
+  position: fixed;
+  padding-top: 1.625rem;
+  width: 100%;
+
+  background-color: white;
+
+  z-index: 3;
 }
 
-.top-nav, .nav-list {
+.nav-list {
   position: relative;
   height: 4.625rem;
-  width: 100%;
 }
 
 .nav-list, .nav-menu {
@@ -108,6 +113,7 @@ body, .top-nav, .nav-list {
   position: relative;
   display: flex;
   width: 100%;
+  margin-top: 6.25rem;
 }
 
 section h1, .the-future{
@@ -531,6 +537,10 @@ div.testimonials-container > div {
   border: 1px solid #D8D8D8;
 }
 
+.card-container-shadow {
+  box-shadow: 0px 1.85px 3.15px 0px rgba(49, 49, 49, 0.02), 0px 20px 13px 0px rgba(49, 49, 49, 0.05), 0px 38.5px 25.5px 0px rgba(49, 49, 49, 0.06);
+}
+
 div.card-container > img {
   width: 7.5rem;
   margin: 15% auto 0 auto;
@@ -538,6 +548,7 @@ div.card-container > img {
 
 div.card-container > p {
   text-align: justify ;
+  font-weight: 400;
   margin-top: 10%;
   padding: 0 1rem;
 }
@@ -566,12 +577,50 @@ div.person-info-written-container > p{
   font-weight: 500;
 }
 
-section.testimonials > svg {
-  margin: 0rem auto 10rem auto;
+.switchers-container {
+  position: relative;
+  margin: 2rem auto 2rem auto;
+}
+
+div.switchers-container > svg {
+  transform: scaleX(-1);
+}
+
+.testimonials-switchers {
+  position: absolute;
+  display: flex;
+  height: 3rem;
+  width: 6.75rem;
+  top: 0;
+
+  flex-shrink: 0;
+}
+
+div.testimonials-switchers > button{
+  position: relative;
+  height: 2.625rem;
+  width: 2.625rem;
+  border-radius: 100%;
+  
+  cursor: pointer;
+
+  background-color: transparent;
+}
+
+.testimonials-right-switcher {
+  margin: 0 0 auto auto;
+  border: none;
+  outline: none;
+}
+
+.testimonials-left-switcher {
+  margin: 0 auto auto 0;
+  border: none;
+  outline: none;
 }
 
 .newsletter {
-  margin: 5% 0 0 0;
+  margin-top: 5%;
 }
 
 .email-container {
