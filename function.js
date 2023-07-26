@@ -1,7 +1,6 @@
-let card_number = JSON.parse(localStorage.getItem("card_num"));
 let card = document.querySelectorAll('.card-container');
+var card_number = 0;
 
-card_number === null && (card_number = 0);  
 card[card_number].classList.add("card-container-shadow");
 
 let left_btn = document.querySelector('.testimonials-left-switcher');
@@ -59,7 +58,7 @@ left_btn.addEventListener("click", () =>
 {
     if(card_number > 0){
         card[card_number].classList.remove("card-container-shadow");
-        card_number = card_number === 0 ? 2 : card_number - 1;
+        card_number--;
         card[card_number].classList.add("card-container-shadow");
         localStorage.setItem("card_num", JSON.stringify(card_number));
 
@@ -72,7 +71,7 @@ right_btn.addEventListener("click", () =>
 {
     if(card_number < 2) {
         card[card_number].classList.remove("card-container-shadow");
-        card_number = (card_number + 1) % 3;
+        card_number++;
         card[card_number].classList.add("card-container-shadow");
         localStorage.setItem("card_num", JSON.stringify(card_number));
 
